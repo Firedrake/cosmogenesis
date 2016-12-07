@@ -1,0 +1,31 @@
+System table - xyz, formal name, common name, id of root body
+
+xyz is equatorial from Sol, in metres.
+
+Dist/pc = 1000/Plx
+Dist/m = 3.0856776e+16*Dist/pc
+
+X = distance * sin(dx) * cos(RA)
+Y = distance * sin(dx) * sin(RA)
+Z = distance * cos(dx)
+
+Body table - system id, formal name?, common name, type, orbital
+parent or NULL, orbital elements, mass
+
+types include:
+barycentre ("virtual")
+star
+planet / moon / individual asteroid
+asteroid belt
+
+Orbital elements:
+
+eccentricity e
+semimajor axis a / metres
+inclination i / radians
+longitude of ascending node capomega / radians
+argument of periapsis omega / radians
+true anomaly at epoch nu / radians
+
+Star - body id, spclass, Tc, Lc, metallicity, age, visual lum,
+bolometric lum
